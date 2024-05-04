@@ -1,0 +1,28 @@
+<head>
+  <title>find</title>
+  <style media="screen">
+    p {
+  white-space: initial;
+  max-width: 550px;
+}
+  </style>
+</head>
+<body class="center bg2 max">
+<div id="main">
+<h1>Posts</h1>
+<div id="home">
+  <h2><a href="../index">home</a> <span class="line">|</span>
+  <a href="../about">find</a>
+</div>
+<br>
+{% for post in site.posts%}
+  <li><a href="{{post.url}}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+<br>
+<br>
+<footer id="footer">
+  <img src="../assets/images/home/bar.gif">
+  <p><a href="http://jonhuml.com">go back to safety</a></p>
+  <span><img src="../assets/images/home/windows.gif"></span>
+</footer>
